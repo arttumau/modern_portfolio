@@ -1,9 +1,8 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: rgb(14, 12, 12);
+$secondary-color: hsl(231, 91%, 29%);
 $show-home-image: true;
 ///$home-image: url(../image/background.jpg.jpg);
 $home-image: url(../image/takana2.jpg);
-
 $background-opacity: 0.6;
 
 @mixin easeOut {
@@ -28,6 +27,16 @@ $background-opacity: 0.6;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set Text Color
+
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 
