@@ -1,8 +1,10 @@
 $primary-color: rgb(14, 12, 12);
 $secondary-color: hsl(231, 91%, 29%);
 $show-home-image: true;
-///$home-image: url(../image/background.jpg.jpg);
-$home-image: url(../image/takana2.jpg);
+
+//BACKGROUND PICTURE
+//IF PROBLEMS WITH UPDATING PICTURES, CMD - BASH - npm run sass
+$home-image: url(../image/background.jpg);
 $background-opacity: 0.6;
 
 @mixin easeOut {

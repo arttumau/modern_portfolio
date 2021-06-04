@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../image/portrait.jpg.jpg);
+      background: url(../image/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #071b8d;
       background-size: cover; }
@@ -100,7 +100,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../image/takana2.jpg);
+    background: url(../image/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -163,13 +163,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    border: solid 3px #071b8d;
+    margin: auto;
     border-radius: 50%;
-    background-size: cover;
-    vertical-align: middle;
-    margin: 0 auto;
-    width: 250px;
-    height: 250px; }
+    border: #071b8d 6px solid;
+    width: 250px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -239,6 +236,14 @@ main {
   color: #fff;
   height: 60px; }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -262,14 +267,18 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../image/portrait.jpg.jpg);
+      background: url(../image/portrait.jpg);
       width: 150px;
       height: 150px;
       background-size: cover; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }

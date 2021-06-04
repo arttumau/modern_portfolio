@@ -27,6 +27,7 @@ h3 {
   }
 
   &.sm-heading {
+    //margin-top: 0rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
@@ -82,22 +83,23 @@ main {
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-image {
-    grid-area: bioimage;
-    border: solid 3px $secondary-color;
-    border-radius: 50%;
-    background-size: cover;
-    vertical-align: middle;
-    margin: 0 auto;
-    width: 250px;
-    height: 250px;
-  }
   //.bio-image {
   //  grid-area: bioimage;
-  //  margin: auto;
+  //  border: solid 3px $secondary-color;
   //  border-radius: 50%;
-  //  border: $secondary-color 3px solid;
+  //  background-size: cover;
+  //  vertical-align: middle;
+  //  margin: 0 auto;
+  //  width: 250px;
+  //  height: 250px;
   //}
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 6px solid;
+    width: 250px; // W/O SIZING TOO BIG
+  }
 
   .bio {
     grid-area: bio;
