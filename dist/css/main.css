@@ -163,10 +163,13 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    margin: auto;
+    border: solid 3px #071b8d;
     border-radius: 50%;
-    border: #071b8d 6px solid;
-    width: 250px; }
+    background-size: cover;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -284,6 +287,6 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 50rem; }
+      font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
